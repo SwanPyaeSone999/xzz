@@ -1,0 +1,83 @@
+// variables
+
+$deepblue: #032f3e;
+$sectionheading: 40px;
+
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    background-color: $deepblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    h1{
+        padding-left:20px;
+    }
+    ul{
+        list-style-type: none;
+        padding-right:20px;
+    }
+    li{
+        display: inline-block;
+        margin-left: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+   
+}
+
+#services{
+    background-color: #F7F4F4;
+    h1{
+        text-align: center;
+        font-size: $sectionheading;
+        margin: 0;
+        padding: 0;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .service1{ 
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+        border: 1px solid brown;
+        @include flex;
+    }
+    .service2{ 
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+        border: 1px solid brown;
+        @include flex;
+    }
+    .service3{ 
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+        border: 1px solid brown;
+        @include flex;
+    }
+    h4{
+        text-align: center;
+    }
+   
+}
+
